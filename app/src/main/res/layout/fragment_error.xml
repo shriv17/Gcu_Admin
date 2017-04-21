@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="edu.gcu.gcuadmin.fragments.ErrorFragment"
+                android:background="@color/colorPrimary"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Content will be updated."
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:gravity="fill_vertical|fill_horizontal"
+        />
+
+</FrameLayout>

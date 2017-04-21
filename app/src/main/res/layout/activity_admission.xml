@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gcu.gcuadmin.admission.AdmissionActivity">
+
+    <include android:id="@+id/admission_toolbar"
+             layout="@layout/toolbar"/>
+
+    <edu.gcu.gcuadmin.util.MyViewPager
+        android:id="@+id/admission_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/admission_toolbar"
+        >
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admission_tab_layout"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_gravity="top"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+            app:tabIndicatorHeight="4dp"
+            app:tabBackground="@drawable/tab_bg"
+            app:tabTextAppearance="@style/tabText"
+            app:tabPadding="5dp"
+            />
+    </edu.gcu.gcuadmin.util.MyViewPager>
+</RelativeLayout>

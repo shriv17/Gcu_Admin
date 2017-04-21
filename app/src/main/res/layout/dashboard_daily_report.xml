@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:isScrollContainer="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/daily_report_title"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:textSize="@dimen/textXLarge"
+            android:textStyle="bold|italic"
+            android:text="@string/admission_sources"
+            android:gravity="center"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/daily_report_button_refreshPie"
+            android:src="@drawable/ic_action_refresh"
+            android:background="@drawable/grey_ripple"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:padding="2dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admission_sources_linear"
+            android:orientation="horizontal"
+            android:layout_below="@id/daily_report_button_refreshPie"
+            android:padding="3dp"
+            android:weightSum="3"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/admission_sources_from_date"
+                android:hint="@string/from_date"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/admission_sources_to_date"
+                android:hint="@string/to_date"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:background="@drawable/tab_bg"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/admission_sources_submit"
+                android:layout_marginStart="10dp"
+                android:text="View"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+        </LinearLayout>
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/daily_report_pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:padding="5dp"
+                android:isScrollContainer="true"
+                android:layout_below="@id/admission_sources_linear"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                />
+    </RelativeLayout>
+</ScrollView>

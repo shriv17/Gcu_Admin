@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drawer_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/ic_nav_home"
+            />
+        <item
+            android:id="@+id/nav_drawer_students"
+            android:title="@string/nav_students"
+            android:icon="@drawable/ic_nav_students">
+            <!--
+            <menu>
+                <item android:id="@+id/nav_drawer_students_360"
+                    android:title="@string/nav_students_360"
+                    />
+                <item android:id="@+id/nav_drawer_students_mark_Attendance"
+                      android:title="@string/nav_mark_attendance"/>
+            </menu>
+            -->
+        </item>
+    </group>
+</menu>
